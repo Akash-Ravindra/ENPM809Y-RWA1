@@ -1,0 +1,123 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+R\+W\+A1 -\/ A part sorting algorithm.  
+
+
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}}
+\begin{DoxyCompactList}\small\item\em User defined data object that contains information about each type of box. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}}
+\begin{DoxyCompactList}\small\item\em User defined data object that holds box metadata and the number of parts that remain to be sorted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a5696e93f90ff1dcd8cab1109f6ef9dbd}{get\+\_\+total\+\_\+parts}} (\mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} \&temp\+P\+SL)
+\begin{DoxyCompactList}\small\item\em Get the total parts object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a842266142022a033c32646c0d0fdcebb}{get\+\_\+total\+\_\+boxes}} (\mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} \&temp\+P\+SL)
+\begin{DoxyCompactList}\small\item\em Get the total boxes object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a94fab9d1d5007124ee8a0f165b76b6a9}{get\+\_\+parts\+\_\+per\+\_\+box}} (\mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} \&temp\+P\+SL)
+\begin{DoxyCompactList}\small\item\em Get the parts per box object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a8b2ceda0f47ce351ae72ea042d7f6584}{fill\+\_\+up\+\_\+boxes}} (\mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} \&temp\+P\+SL)
+\begin{DoxyCompactList}\small\item\em Fills up the boxes based on the criteria. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+W\+A1 -\/ A part sorting algorithm. 
+
+\begin{DoxyAuthor}{Author}
+Akash Ravindra (\href{mailto:aravind2@umd.edu}{\texttt{ aravind2@umd.\+edu}})
+\end{DoxyAuthor}
+Based on user inputs such as the number of boxes, number of parts per box and the number of parts to sort, this algorithm generates the distribution based on a set rules. No box can be half full. No small box can have a per box count greater than a bigger box. Not all parts needs to be sorted ( Mathematically impossible based on certain inputs ) \begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/09-\/26
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a8b2ceda0f47ce351ae72ea042d7f6584}\label{main_8cpp_a8b2ceda0f47ce351ae72ea042d7f6584}} 
+\index{main.cpp@{main.cpp}!fill\_up\_boxes@{fill\_up\_boxes}}
+\index{fill\_up\_boxes@{fill\_up\_boxes}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{fill\_up\_boxes()}{fill\_up\_boxes()}}
+{\footnotesize\ttfamily void fill\+\_\+up\+\_\+boxes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} \&}]{temp\+P\+SL }\end{DoxyParamCaption})}
+
+
+
+Fills up the boxes based on the criteria. 
+
+After the user has entered all the data, this function recursively goes box by box and attempts to fill it up. If it succeds to do so then the number\+\_\+parts\+\_\+left is reduce and it moves on to the next box in the series.
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp\+P\+SL} & A \mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} passed as a reference to use the inputs given by the user into the \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} of each type of box in the list \\
+\hline
+\end{DoxyParams}
+Prints the Main heading msg only once\mbox{\Hypertarget{main_8cpp_a94fab9d1d5007124ee8a0f165b76b6a9}\label{main_8cpp_a94fab9d1d5007124ee8a0f165b76b6a9}} 
+\index{main.cpp@{main.cpp}!get\_parts\_per\_box@{get\_parts\_per\_box}}
+\index{get\_parts\_per\_box@{get\_parts\_per\_box}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_parts\_per\_box()}{get\_parts\_per\_box()}}
+{\footnotesize\ttfamily void get\+\_\+parts\+\_\+per\+\_\+box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} \&}]{temp\+P\+SL }\end{DoxyParamCaption})}
+
+
+
+Get the parts per box object. 
+
+The user is prompted to input the number off items that can be held in each kind of box; S, M, L and XL respectively. Input validation is carried out to insure that all the inputs are positive integers and that the value of S $<$ value of M $<$ value of L $<$ value of XL 
+\begin{DoxyParams}{Parameters}
+{\em temp\+P\+SL} & A \mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} passed as a reference to store the inputs given by the user into the \mbox{\hyperlink{structbox__metadata_a1baeece7fc78f86af8932947f81f074d}{box\+\_\+metadata.\+no\+\_\+items\+\_\+perbox}} of each type of box in the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a842266142022a033c32646c0d0fdcebb}\label{main_8cpp_a842266142022a033c32646c0d0fdcebb}} 
+\index{main.cpp@{main.cpp}!get\_total\_boxes@{get\_total\_boxes}}
+\index{get\_total\_boxes@{get\_total\_boxes}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_total\_boxes()}{get\_total\_boxes()}}
+{\footnotesize\ttfamily void get\+\_\+total\+\_\+boxes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} \&}]{temp\+P\+SL }\end{DoxyParamCaption})}
+
+
+
+Get the total boxes object. 
+
+The user is pormpted to input the number of boxes of S, M, L and XL respectively. Input validation is carried out to make sure that the number entered is a positive integer
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp\+P\+SL} & A \mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} passed as a reference to store the inputs given by the user into the \mbox{\hyperlink{structbox__metadata_aeb50fc10a9848d468226df00c6c5521b}{box\+\_\+metadata.\+no\+\_\+boxes}} of each type of box in the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a5696e93f90ff1dcd8cab1109f6ef9dbd}\label{main_8cpp_a5696e93f90ff1dcd8cab1109f6ef9dbd}} 
+\index{main.cpp@{main.cpp}!get\_total\_parts@{get\_total\_parts}}
+\index{get\_total\_parts@{get\_total\_parts}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_total\_parts()}{get\_total\_parts()}}
+{\footnotesize\ttfamily void get\+\_\+total\+\_\+parts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} \&}]{temp\+P\+SL }\end{DoxyParamCaption})}
+
+
+
+Get the total parts object. 
+
+The user is prompted to enter the total number of parts that needs to be sorted into the boxes. Validation is carried out on the input to insure that the number entered by the user is a positive integer. 
+\begin{DoxyParams}{Parameters}
+{\em temp\+P\+S\+LA} & \mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} passed as a reference to store the inputs given by the user into the \mbox{\hyperlink{structpart__sorting__list_aecb1d797d8648ef6f2c9834c33682692}{part\+\_\+sorting\+\_\+list.\+number\+\_\+parts\+\_\+left}} of each type of box in the list \\
+\hline
+\end{DoxyParams}

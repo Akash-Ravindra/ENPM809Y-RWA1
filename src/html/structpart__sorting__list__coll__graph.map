@@ -1,0 +1,4 @@
+<map id="part_sorting_list" name="part_sorting_list">
+<area shape="rect" id="node1" title="User defined data object that holds box metadata and the number of parts that remain to be sorted." alt="" coords="5,153,132,180"/>
+<area shape="rect" id="node2" href="$structbox__metadata.html" title="User defined data object that contains information about each type of box." alt="" coords="11,5,127,32"/>
+</map>

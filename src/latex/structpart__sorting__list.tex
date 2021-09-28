@@ -1,0 +1,108 @@
+\hypertarget{structpart__sorting__list}{}\doxysection{part\+\_\+sorting\+\_\+list Struct Reference}
+\label{structpart__sorting__list}\index{part\_sorting\_list@{part\_sorting\_list}}
+
+
+User defined data object that holds box metadata and the number of parts that remain to be sorted.  
+
+
+
+
+Collaboration diagram for part\+\_\+sorting\+\_\+list\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{structpart__sorting__list__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} \mbox{\hyperlink{structpart__sorting__list_ad3e427b5d52f9c4784e19884001f8959}{box\+\_\+\+XL}}
+\item 
+\mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} \mbox{\hyperlink{structpart__sorting__list_a760ab59052afa34cb5a000c8b42622d2}{box\+\_\+L}}
+\item 
+\mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} \mbox{\hyperlink{structpart__sorting__list_abb4d7eb034805ad0f3ede076009fcbdf}{box\+\_\+M}}
+\item 
+\mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} \mbox{\hyperlink{structpart__sorting__list_abc3d6366e9787c1f06c58da6ceb61eb5}{box\+\_\+S}}
+\item 
+\mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} $\ast$ \mbox{\hyperlink{structpart__sorting__list_a6f7fdc57c066b080caa9fada90e8e2eb}{current\+\_\+box}} \{\&\mbox{\hyperlink{structpart__sorting__list_ad3e427b5d52f9c4784e19884001f8959}{box\+\_\+\+XL}}\}
+\item 
+unsigned int \mbox{\hyperlink{structpart__sorting__list_aecb1d797d8648ef6f2c9834c33682692}{number\+\_\+parts\+\_\+left}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+User defined data object that holds box metadata and the number of parts that remain to be sorted. 
+
+This struct acts as a single point of data manipulation for the algo. It contains the list of all the \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} strct or each type of box with their initial values. part\+\_\+sorting\+\_\+list.\+currentbox is a pointer that always points to the box that parts need to be sorted into. If the pointer ends up being a N\+U\+LL then we have reached the end of the list 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structpart__sorting__list_a760ab59052afa34cb5a000c8b42622d2}\label{structpart__sorting__list_a760ab59052afa34cb5a000c8b42622d2}} 
+\index{part\_sorting\_list@{part\_sorting\_list}!box\_L@{box\_L}}
+\index{box\_L@{box\_L}!part\_sorting\_list@{part\_sorting\_list}}
+\doxysubsubsection{\texorpdfstring{box\_L}{box\_L}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} part\+\_\+sorting\+\_\+list\+::box\+\_\+L}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{      .next\_fill\_box\{\&\mbox{\hyperlink{structpart__sorting__list_abb4d7eb034805ad0f3ede076009fcbdf}{box\_M}}\},}
+\DoxyCodeLine{      .\mbox{\hyperlink{structbox__metadata_a56569f97abfccb3050ac2f67f3a281a5}{print\_stat}}\{}
+\DoxyCodeLine{          \textcolor{stringliteral}{"L box "}\}\}}
+
+\end{DoxyCode}
+A \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} stuct to store the data for the L box \mbox{\Hypertarget{structpart__sorting__list_abb4d7eb034805ad0f3ede076009fcbdf}\label{structpart__sorting__list_abb4d7eb034805ad0f3ede076009fcbdf}} 
+\index{part\_sorting\_list@{part\_sorting\_list}!box\_M@{box\_M}}
+\index{box\_M@{box\_M}!part\_sorting\_list@{part\_sorting\_list}}
+\doxysubsubsection{\texorpdfstring{box\_M}{box\_M}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} part\+\_\+sorting\+\_\+list\+::box\+\_\+M}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{      .next\_fill\_box\{\&\mbox{\hyperlink{structpart__sorting__list_abc3d6366e9787c1f06c58da6ceb61eb5}{box\_S}}\},}
+\DoxyCodeLine{      .\mbox{\hyperlink{structbox__metadata_a56569f97abfccb3050ac2f67f3a281a5}{print\_stat}}\{}
+\DoxyCodeLine{          \textcolor{stringliteral}{"M box "}\}\}}
+
+\end{DoxyCode}
+A \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} stuct to store the data for the M box \mbox{\Hypertarget{structpart__sorting__list_abc3d6366e9787c1f06c58da6ceb61eb5}\label{structpart__sorting__list_abc3d6366e9787c1f06c58da6ceb61eb5}} 
+\index{part\_sorting\_list@{part\_sorting\_list}!box\_S@{box\_S}}
+\index{box\_S@{box\_S}!part\_sorting\_list@{part\_sorting\_list}}
+\doxysubsubsection{\texorpdfstring{box\_S}{box\_S}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} part\+\_\+sorting\+\_\+list\+::box\+\_\+S}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{.print\_stat\{}
+\DoxyCodeLine{      \textcolor{stringliteral}{"S box "}\}\}}
+
+\end{DoxyCode}
+A \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} stuct to store the data for the S box \mbox{\Hypertarget{structpart__sorting__list_ad3e427b5d52f9c4784e19884001f8959}\label{structpart__sorting__list_ad3e427b5d52f9c4784e19884001f8959}} 
+\index{part\_sorting\_list@{part\_sorting\_list}!box\_XL@{box\_XL}}
+\index{box\_XL@{box\_XL}!part\_sorting\_list@{part\_sorting\_list}}
+\doxysubsubsection{\texorpdfstring{box\_XL}{box\_XL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} part\+\_\+sorting\+\_\+list\+::box\+\_\+\+XL}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{.next\_fill\_box\{\&\mbox{\hyperlink{structpart__sorting__list_a760ab59052afa34cb5a000c8b42622d2}{box\_L}}\},}
+\DoxyCodeLine{                      .\mbox{\hyperlink{structbox__metadata_a56569f97abfccb3050ac2f67f3a281a5}{print\_stat}}\{\textcolor{stringliteral}{"XL box "}\}\}}
+
+\end{DoxyCode}
+A \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} stuct to store the data for the XL box \mbox{\Hypertarget{structpart__sorting__list_a6f7fdc57c066b080caa9fada90e8e2eb}\label{structpart__sorting__list_a6f7fdc57c066b080caa9fada90e8e2eb}} 
+\index{part\_sorting\_list@{part\_sorting\_list}!current\_box@{current\_box}}
+\index{current\_box@{current\_box}!part\_sorting\_list@{part\_sorting\_list}}
+\doxysubsubsection{\texorpdfstring{current\_box}{current\_box}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}}$\ast$ part\+\_\+sorting\+\_\+list\+::current\+\_\+box \{\&\mbox{\hyperlink{structpart__sorting__list_ad3e427b5d52f9c4784e19884001f8959}{box\+\_\+\+XL}}\}}
+
+A pointer that always points to the box that parts needs to be sorted into. If the pointer ends up becoming a N\+U\+LL then there are no more boxs left to sort into \mbox{\Hypertarget{structpart__sorting__list_aecb1d797d8648ef6f2c9834c33682692}\label{structpart__sorting__list_aecb1d797d8648ef6f2c9834c33682692}} 
+\index{part\_sorting\_list@{part\_sorting\_list}!number\_parts\_left@{number\_parts\_left}}
+\index{number\_parts\_left@{number\_parts\_left}!part\_sorting\_list@{part\_sorting\_list}}
+\doxysubsubsection{\texorpdfstring{number\_parts\_left}{number\_parts\_left}}
+{\footnotesize\ttfamily unsigned int part\+\_\+sorting\+\_\+list\+::number\+\_\+parts\+\_\+left \{\}}
+
+The number of parts that need to be sorted at any given time. Obtained as an user input. Its value decreases as the parts get sored 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

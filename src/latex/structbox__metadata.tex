@@ -1,0 +1,72 @@
+\hypertarget{structbox__metadata}{}\doxysection{box\+\_\+metadata Struct Reference}
+\label{structbox__metadata}\index{box\_metadata@{box\_metadata}}
+
+
+User defined data object that contains information about each type of box.  
+
+
+
+
+Collaboration diagram for box\+\_\+metadata\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{structbox__metadata__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{structbox__metadata_aeb50fc10a9848d468226df00c6c5521b}{no\+\_\+boxes}} \{\}
+\item 
+unsigned int \mbox{\hyperlink{structbox__metadata_a1baeece7fc78f86af8932947f81f074d}{no\+\_\+items\+\_\+perbox}} \{\}
+\item 
+unsigned int \mbox{\hyperlink{structbox__metadata_a08b1af7a326eebb7dbd53afe64afb7c2}{no\+\_\+free\+\_\+boxes}} \{\}
+\item 
+\mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} $\ast$ \mbox{\hyperlink{structbox__metadata_a802611566ef5e8fb48c364ce1af3a89f}{next\+\_\+fill\+\_\+box}} \{\}
+\item 
+std\+::string \mbox{\hyperlink{structbox__metadata_a56569f97abfccb3050ac2f67f3a281a5}{print\+\_\+stat}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+User defined data object that contains information about each type of box. 
+
+This datatype acts as a container to hold all the attributes associated with a box meant for the sorting algo. \mbox{\hyperlink{structbox__metadata_aeb50fc10a9848d468226df00c6c5521b}{box\+\_\+metadata.\+no\+\_\+boxes}} and \mbox{\hyperlink{structbox__metadata_a1baeece7fc78f86af8932947f81f074d}{box\+\_\+metadata.\+no\+\_\+items\+\_\+perbox}} are user inputs. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structbox__metadata_a802611566ef5e8fb48c364ce1af3a89f}\label{structbox__metadata_a802611566ef5e8fb48c364ce1af3a89f}} 
+\index{box\_metadata@{box\_metadata}!next\_fill\_box@{next\_fill\_box}}
+\index{next\_fill\_box@{next\_fill\_box}!box\_metadata@{box\_metadata}}
+\doxysubsubsection{\texorpdfstring{next\_fill\_box}{next\_fill\_box}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}}$\ast$ box\+\_\+metadata\+::next\+\_\+fill\+\_\+box \{\}}
+
+Contains the address of the box that parts can be sorted into next. \mbox{\Hypertarget{structbox__metadata_aeb50fc10a9848d468226df00c6c5521b}\label{structbox__metadata_aeb50fc10a9848d468226df00c6c5521b}} 
+\index{box\_metadata@{box\_metadata}!no\_boxes@{no\_boxes}}
+\index{no\_boxes@{no\_boxes}!box\_metadata@{box\_metadata}}
+\doxysubsubsection{\texorpdfstring{no\_boxes}{no\_boxes}}
+{\footnotesize\ttfamily unsigned int box\+\_\+metadata\+::no\+\_\+boxes \{\}}
+
+Contains the number of boxes of this type.\+Obtained from the user as an input \mbox{\Hypertarget{structbox__metadata_a08b1af7a326eebb7dbd53afe64afb7c2}\label{structbox__metadata_a08b1af7a326eebb7dbd53afe64afb7c2}} 
+\index{box\_metadata@{box\_metadata}!no\_free\_boxes@{no\_free\_boxes}}
+\index{no\_free\_boxes@{no\_free\_boxes}!box\_metadata@{box\_metadata}}
+\doxysubsubsection{\texorpdfstring{no\_free\_boxes}{no\_free\_boxes}}
+{\footnotesize\ttfamily unsigned int box\+\_\+metadata\+::no\+\_\+free\+\_\+boxes \{\}}
+
+Contains the number of boxes that are free and can be filled with parts. This is init with the no\+\_\+boxes and during runtime based on the number of parts sorted its value changes \mbox{\Hypertarget{structbox__metadata_a1baeece7fc78f86af8932947f81f074d}\label{structbox__metadata_a1baeece7fc78f86af8932947f81f074d}} 
+\index{box\_metadata@{box\_metadata}!no\_items\_perbox@{no\_items\_perbox}}
+\index{no\_items\_perbox@{no\_items\_perbox}!box\_metadata@{box\_metadata}}
+\doxysubsubsection{\texorpdfstring{no\_items\_perbox}{no\_items\_perbox}}
+{\footnotesize\ttfamily unsigned int box\+\_\+metadata\+::no\+\_\+items\+\_\+perbox \{\}}
+
+Contains the number of parts each box of this type can hold. Obtained from the user as an input \mbox{\Hypertarget{structbox__metadata_a56569f97abfccb3050ac2f67f3a281a5}\label{structbox__metadata_a56569f97abfccb3050ac2f67f3a281a5}} 
+\index{box\_metadata@{box\_metadata}!print\_stat@{print\_stat}}
+\index{print\_stat@{print\_stat}!box\_metadata@{box\_metadata}}
+\doxysubsubsection{\texorpdfstring{print\_stat}{print\_stat}}
+{\footnotesize\ttfamily std\+::string box\+\_\+metadata\+::print\+\_\+stat \{\}}
+
+Contains the text that is associated with this Box that needs to be used when displaying the results to the user 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}
