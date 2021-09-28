@@ -5,15 +5,17 @@
 R\+W\+A1 -\/ A part sorting algorithm.  
 
 
+{\ttfamily \#include $<$algorithm$>$}\newline
 {\ttfamily \#include $<$array$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$limits$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
-Include dependency graph for main.\+cpp\+:\nopagebreak
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=324pt]{main_8cpp__incl}
+\includegraphics[width=350pt]{main_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Classes}
@@ -34,9 +36,10 @@ void \mbox{\hyperlink{main_8cpp_a94fab9d1d5007124ee8a0f165b76b6a9}{get\+\_\+part
 \begin{DoxyCompactList}\small\item\em Get the parts per box object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{main_8cpp_a8b2ceda0f47ce351ae72ea042d7f6584}{fill\+\_\+up\+\_\+boxes}} (\mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} \&temp\+P\+SL)
 \begin{DoxyCompactList}\small\item\em Fills up the boxes based on the criteria. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
-int {\bfseries main} ()
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{main_8cpp_aceddaf9b21ed5be8855c52fcdcdc0c6e}{positive\+\_\+int\+\_\+check}} (std\+::string \&in\+\_\+string)
+\begin{DoxyCompactList}\small\item\em Checks whether the given string contains only positive integers. Whitspaces are ignored. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em A program to sort the given number of parts in a list of box based on a set of rules. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -74,7 +77,7 @@ After the user has entered all the data, this function recursively goes box by b
 {\em temp\+P\+SL} & A \mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} passed as a reference to use the inputs given by the user into the \mbox{\hyperlink{structbox__metadata}{box\+\_\+metadata}} of each type of box in the list \\
 \hline
 \end{DoxyParams}
-Prints the Main heading msg only once\mbox{\Hypertarget{main_8cpp_a94fab9d1d5007124ee8a0f165b76b6a9}\label{main_8cpp_a94fab9d1d5007124ee8a0f165b76b6a9}} 
+\mbox{\Hypertarget{main_8cpp_a94fab9d1d5007124ee8a0f165b76b6a9}\label{main_8cpp_a94fab9d1d5007124ee8a0f165b76b6a9}} 
 \index{main.cpp@{main.cpp}!get\_parts\_per\_box@{get\_parts\_per\_box}}
 \index{get\_parts\_per\_box@{get\_parts\_per\_box}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{get\_parts\_per\_box()}{get\_parts\_per\_box()}}
@@ -121,3 +124,36 @@ The user is prompted to enter the total number of parts that needs to be sorted 
 {\em temp\+P\+S\+LA} & \mbox{\hyperlink{structpart__sorting__list}{part\+\_\+sorting\+\_\+list}} passed as a reference to store the inputs given by the user into the \mbox{\hyperlink{structpart__sorting__list_aecb1d797d8648ef6f2c9834c33682692}{part\+\_\+sorting\+\_\+list.\+number\+\_\+parts\+\_\+left}} of each type of box in the list \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A program to sort the given number of parts in a list of box based on a set of rules. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_aceddaf9b21ed5be8855c52fcdcdc0c6e}\label{main_8cpp_aceddaf9b21ed5be8855c52fcdcdc0c6e}} 
+\index{main.cpp@{main.cpp}!positive\_int\_check@{positive\_int\_check}}
+\index{positive\_int\_check@{positive\_int\_check}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{positive\_int\_check()}{positive\_int\_check()}}
+{\footnotesize\ttfamily bool positive\+\_\+int\+\_\+check (\begin{DoxyParamCaption}\item[{std\+::string \&}]{in\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+Checks whether the given string contains only positive integers. Whitspaces are ignored. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true implies that the given string contains only digits 
+
+false implies that the given string contains more than just digits 
+\end{DoxyReturn}

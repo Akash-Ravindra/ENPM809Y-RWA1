@@ -71,7 +71,8 @@ $(function() {
 
 <p>RWA1 - A part sorting algorithm.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -80,11 +81,12 @@ Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#main_8cpp" alt=""/></div>
 <map name="main_8cpp" id="main_8cpp">
-<area shape="rect" title="RWA1 &#45; A part sorting algorithm." alt="" coords="131,5,213,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,61,107"/>
-<area shape="rect" title=" " alt="" coords="85,80,165,107"/>
-<area shape="rect" title=" " alt="" coords="189,80,248,107"/>
-<area shape="rect" title=" " alt="" coords="272,80,331,107"/>
+<area shape="rect" title="RWA1 &#45; A part sorting algorithm." alt="" coords="193,5,276,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,91,107"/>
+<area shape="rect" title=" " alt="" coords="115,80,171,107"/>
+<area shape="rect" title=" " alt="" coords="195,80,275,107"/>
+<area shape="rect" title=" " alt="" coords="299,80,357,107"/>
+<area shape="rect" title=" " alt="" coords="381,80,440,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -111,8 +113,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a8b2ceda0f47ce351ae72ea042d7f6584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a8b2ceda0f47ce351ae72ea042d7f6584">fill_up_boxes</a> (<a class="el" href="structpart__sorting__list.html">part_sorting_list</a> &amp;tempPSL)</td></tr>
 <tr class="memdesc:a8b2ceda0f47ce351ae72ea042d7f6584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills up the boxes based on the criteria.  <a href="main_8cpp.html#a8b2ceda0f47ce351ae72ea042d7f6584">More...</a><br /></td></tr>
 <tr class="separator:a8b2ceda0f47ce351ae72ea042d7f6584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="memitem:aceddaf9b21ed5be8855c52fcdcdc0c6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aceddaf9b21ed5be8855c52fcdcdc0c6e">positive_int_check</a> (std::string &amp;in_string)</td></tr>
+<tr class="memdesc:aceddaf9b21ed5be8855c52fcdcdc0c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given string contains only positive integers. Whitspaces are ignored.  <a href="main_8cpp.html#aceddaf9b21ed5be8855c52fcdcdc0c6e">More...</a><br /></td></tr>
+<tr class="separator:aceddaf9b21ed5be8855c52fcdcdc0c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A program to sort the given number of parts in a list of box based on a set of rules.  <a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">More...</a><br /></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -146,7 +151,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
   </table>
   </dd>
 </dl>
-<p>Prints the Main heading msg only once</p>
 
 </div>
 </div>
@@ -226,6 +230,55 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A program to sort the given number of parts in a list of box based on a set of rules. </p>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="aceddaf9b21ed5be8855c52fcdcdc0c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceddaf9b21ed5be8855c52fcdcdc0c6e">&#9670;&nbsp;</a></span>positive_int_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool positive_int_check </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>in_string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the given string contains only positive integers. Whitspaces are ignored. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in_string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true implies that the given string contains only digits </dd>
+<dd>
+false implies that the given string contains more than just digits </dd></dl>
 
 </div>
 </div>

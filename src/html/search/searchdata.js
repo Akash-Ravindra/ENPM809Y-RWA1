@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "bcfgmnp",
   1: "bp",
   2: "m",
-  3: "fg",
+  3: "fgmp",
   4: "bcnp"
 };
 
