@@ -95,30 +95,30 @@ bool positive_int_check(char const &s) {}
  * of box in the list
  */
 void get_total_parts(part_sorting_list &tempPSL) {
-  //   while (std::cout << "How many parts in total? " &&
-  //          (!(std::cin >> tempPSL.number_parts_left) ||
-  //           tempPSL.number_parts_left < 0)) {
-  //     std::cout << "Not a positive int \n";
-  //     std::cin.clear();
-  //     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-  //   }
-  //   std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-  
-  std::string input{};
-  int result;
-  do {
-    result = 0;
-    std::cout << "How many parts in total? ";
-    std::getline(std::cin >> std::ws, input);
-    for (char &c : input) {
-      if (!isdigit(c)) {
-        result = 1;
-        std::cout << "Input not a positive integer\n";
-      }
+    while (std::cout << "How many parts in total? " &&
+           (!(std::cin >> tempPSL.number_parts_left) ||
+            tempPSL.number_parts_left < 0)) {
+      std::cout << "Not a positive int \n";
+      std::cin.clear();
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     }
-  } while (result);
-  std::string::size_type sz;
-  tempPSL.number_parts_left = std::stoi(input, &sz);
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+  
+//   std::string input{};
+//   int result;
+//   do {
+//     result = 0;
+//     std::cout << "How many parts in total? ";
+//     std::getline(std::cin >> std::ws, input);
+//     for (char &c : input) {
+//       if (!isdigit(c)) {
+//         result = 1;
+//         std::cout << "Input not a positive integer\n";
+//       }
+//     }
+//   } while (result);
+//   std::string::size_type sz;
+//   tempPSL.number_parts_left = std::stoi(input, &sz);
 
   /////////////////////// For Debugging///////////////////////////////////////
   // std::cout<<"The numbe you entered was : "<<tempPSL.number_parts_left;
